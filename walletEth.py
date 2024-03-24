@@ -13,7 +13,7 @@ web3 = Web3(Web3.HTTPProvider('https://mainnet.mode.network/'))
 chain_id = 0x868b
 
 # Generate 10,000 wallets
-num_wallets = 10
+num_wallets = 10000
 wallets = []
 
 for _ in range(num_wallets):
