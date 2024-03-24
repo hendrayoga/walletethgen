@@ -24,4 +24,4 @@ jobs:
         pip install web3 eth-account requests
 
     - name: Run Python script
-      run: walletethgen.py
+      run: python walletethgen.py
