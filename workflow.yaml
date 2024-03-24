@@ -1,4 +1,4 @@
-name: Python CI
+name: Python Workflow
 
 on:
   push:
@@ -21,14 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install web3 eth-account requests
 
-    - name: Run tests
-      run: |
-        python -m unittest discover
-
-    # Add deployment steps below if needed
-    # - name: Deploy to production
-    #   run: |
-    #     # Your deployment commands here
-
+    - name: Run Python script
+      run: walletethgen.py
